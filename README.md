@@ -29,7 +29,7 @@ nlpではよく自動評価法BLEUを使用して翻訳文を評価している�
 
 
 ## 提案手法
-1. 原文と参照訳のペアを入力し、Transformerのモデルを生成
+1. 原文と参照訳のペアを入力し、Transformerのモデルを生成（図は英日のMTシステムを評価する場合の図となっている）
   ![image](https://github.com/NeoSolleil/metrics/assets/126864523/e2c727d4-ffd2-4ef4-a1c8-de51608cfc4d)
 
 2. 生成されたモデルのEncoderを用いて参照訳とMT訳をそれぞれの文ベクトルを計算  
