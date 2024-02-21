@@ -9,14 +9,15 @@
 nlpではよく自動評価法BLEUを使用して翻訳文を評価しているが、表層的なn-gram一致率に基づいているため意味的な情報が反映されていないと考えられます。  
 そこで、トランスフォーマーを用いて文を「意味表現」に変換することで翻訳文の評価を行えるのではないかと考えました。  
 文を意味表現に変換することで、表層的なn-gram一致率ではなく、文の意味を使用して評価を行えるのではないかと考えました。
-<img width="197" alt="transformer" src="https://github.com/NeoSolleil/metrics/assets/126864523/164772dc-5b22-4777-8691-2a882c9af564">
-![transformer_encoder](https://github.com/NeoSolleil/metrics/assets/126864523/3a70bbb7-9767-4127-b84f-f0c2118bc9d1)
+![image](https://github.com/NeoSolleil/metrics/assets/126864523/b48c0c97-b3d0-4899-b087-76a1546bb243)
+
 
 
 ## 自動評価とは　（自動評価法の概要）
 機械翻訳システムの訳文（MT訳）をスコア化することでシステムの優劣をつけるというものです。  
 自動評価法ではMT訳（翻訳文）と参照訳（正解訳）を入力とし、2つを比較することでスコアを出力します。  
+![image](https://github.com/NeoSolleil/metrics/assets/126864523/c9b16a65-8760-4a9c-bb91-03bcd2c32670)
 ## トランスフォーマーとは  
   トランスフォーマーとは、機械学習の分野で特に自然言語処理のタスクにおいて非常に成功したモデルの一つです。このモデルは、Attention（注意機構）メカニズムを導入し、シーケンス間の依存関係をモデル化するために設計されています。トランスフォーマーは、Googleによって提案され、2017年に"Attention is All You Need"という論文で初めて発表されました。
   
-![image](https://github.com/NeoSolleil/metrics/assets/126864523/c9b16a65-8760-4a9c-bb91-03bcd2c32670)
+
