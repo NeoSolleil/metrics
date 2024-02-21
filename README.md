@@ -47,8 +47,10 @@ nlpではよく自動評価法BLEUを使用して翻訳文を評価している�
 ## 学習データの付与  
 参照訳に存在しないMT訳中の単語を検索する  
 MT訳中の単語と参照訳中の全単語との類似度を単語分散表現モデルのfastTextを用いて取得し、最も類似度の高い参照訳中の単語とMT訳中の単語を置換することで文を新たに作成する  
-![image](https://github.com/NeoSolleil/metrics/assets/126864523/ffe8ef64-f937-4d38-9791-97ce7b16fa0b)
+![image](https://github.com/NeoSolleil/metrics/assets/126864523/ffe8ef64-f937-4d38-9791-97ce7b16fa0b)  
 
+対応する原文と新たに生成された参照訳を学習データに付与する  
+![image](https://github.com/NeoSolleil/metrics/assets/126864523/4d20c957-5174-4f49-bf57-31656a3c9936)
 
 
 
