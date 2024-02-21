@@ -25,12 +25,12 @@ nlpではよく自動評価法BLEUを使用して翻訳文を評価している�
 左側がエンコーダーとなっており、右側がデコーダーとなっている  
 ![image](https://github.com/NeoSolleil/metrics/assets/126864523/9666b0eb-54ab-4796-aa9e-0bde72f95e19)  
 トランスフォーマーは、エンコーダとデコーダの2つの主要なコンポーネントで構成されています。エンコーダは入力を処理し、デコーダは出力を生成します。  
-![image](https://github.com/NeoSolleil/metrics/assets/126864523/b48c0c97-b3d0-4899-b087-76a1546bb243)
+
 
 
 ## 提案手法
 1. 原文と参照訳のペアを入力し、Transformerのモデルを生成  
-2. 生成されたモデルのEncoderを用いて参照訳とMT訳をそれぞれの文ベクトルを計算
-3. ![image](https://github.com/NeoSolleil/metrics/assets/126864523/9cb8acd6-d00b-46c6-a0b4-82df8f02f805)
+2. 生成されたモデルのEncoderを用いて参照訳とMT訳をそれぞれの文ベクトルを計算  ![image](https://github.com/NeoSolleil/metrics/assets/126864523/b48c0c97-b3d0-4899-b087-76a1546bb243)
 
 4. 参照訳の文ベクトルとMT訳の文ベクトル間の類似度をスコアに使用  
+![image](https://github.com/NeoSolleil/metrics/assets/126864523/9cb8acd6-d00b-46c6-a0b4-82df8f02f805)
