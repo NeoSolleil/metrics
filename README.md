@@ -10,6 +10,7 @@ nlpではよく自動評価法BLEUを使用して翻訳文を評価している�
 そこで、トランスフォーマーを用いて文を「意味表現」に変換することで翻訳文の評価を行えるのではないかと考えました。  
 文を意味表現に変換することで、表層的なn-gram一致率ではなく、文の意味を使用して評価を行えるのではないかと考えました。
 <img width="197" alt="transformer" src="https://github.com/NeoSolleil/metrics/assets/126864523/164772dc-5b22-4777-8691-2a882c9af564">
+![transformer_encoder](https://github.com/NeoSolleil/metrics/assets/126864523/3a70bbb7-9767-4127-b84f-f0c2118bc9d1)
 
 
 ## 自動評価とは　（自動評価法の概要）
