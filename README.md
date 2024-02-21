@@ -32,8 +32,10 @@ nlpではよく自動評価法BLEUを使用して翻訳文を評価している�
 1. 原文と参照訳のペアを入力し、Transformerのモデルを生成
   ![image](https://github.com/NeoSolleil/metrics/assets/126864523/e2c727d4-ffd2-4ef4-a1c8-de51608cfc4d)
 
-2. 生成されたモデルのEncoderを用いて参照訳とMT訳をそれぞれの文ベクトルを計算  ![image]![image](https://github.com/NeoSolleil/metrics/assets/126864523/5b7cddbe-830d-4fda-8d38-819ff15452ae)  
+2. 生成されたモデルのEncoderを用いて参照訳とMT訳をそれぞれの文ベクトルを計算  
+![image]![image](https://github.com/NeoSolleil/metrics/assets/126864523/5b7cddbe-830d-4fda-8d38-819ff15452ae)  
 
 
-3. 参照訳の文ベクトルとMT訳の文ベクトル間の類似度をスコアに使用  ![image](https://github.com/NeoSolleil/metrics/assets/126864523/384a5a46-bb35-4f33-b752-68dbaf71e518)
+3. 参照訳の文ベクトルとMT訳の文ベクトル間の類似度をスコアに使用
+![image](https://github.com/NeoSolleil/metrics/assets/126864523/384a5a46-bb35-4f33-b752-68dbaf71e518)
 
