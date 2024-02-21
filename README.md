@@ -23,4 +23,5 @@ nlpではよく自動評価法BLEUを使用して翻訳文を評価している�
 ## トランスフォーマーとは  
   トランスフォーマーとは、機械学習の分野で特に自然言語処理のタスクにおいて非常に成功したモデルの一つです。このモデルは、Attention（注意機構）メカニズムを導入し、シーケンス間の依存関係をモデル化するために設計されています。トランスフォーマーは、Googleによって提案され、2017年に"Attention is All You Need"という論文で初めて発表されました。
   
+![image](https://github.com/NeoSolleil/metrics/assets/126864523/6bacf466-2deb-4963-9174-a1716a6127cd)
 ![image](https://github.com/NeoSolleil/metrics/assets/126864523/b48c0c97-b3d0-4899-b087-76a1546bb243)
