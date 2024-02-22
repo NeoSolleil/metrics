@@ -10,9 +10,16 @@
 
 ## 以下はコードの説明です。
 
-## 
+## melt_japan.py
 
+17 model_path = ".../fasttext_PATH"#fasttextのモデルへのパス  
+の部分にfasttextのモデルへのパスを設定してください
 
+22 with open('.../ref_PATH', 'r') as f:#参照訳へのパス  
+の部分に参照訳へのパスを設定してください
+
+39 with open('.../MT_PATH', 'r') as f:#MT訳へのパス  
+の部分にMT訳へのパスを設定してください
 
 
 
