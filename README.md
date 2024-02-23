@@ -41,8 +41,9 @@ Transformerのモデルを作成するときに使用するコードです。
 「deeplearning_torch/data」と「deeplearning_torch/pickle」の中身は例なので、自分で変えてください。  
 
 255〜263行目は学習データの設定です。 
-
 「deeplearning_torch/data」の中に設定してください。  
+train,dev,testの３つに学習データを分けて設定してください。  
+
 data_dir = os.path.join(os.path.dirname(__file__), 'data')  
 
 en_train_path = os.path.join(data_dir, 'train.en')#日本語  
