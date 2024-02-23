@@ -68,9 +68,19 @@ torch.save(model.state_dict(), model_file)　　
 
 ## モデルを使用してコサイン類似度（スコア）を出力するには「deeplearning_torch/Vector_cossim.py」を使用します。
 
+254〜257行目はスコアを出したいMT訳と参照訳を設定してください。MT訳と参照訳は「deeplearning_torch/data」の中に設定してください。 
 
+264〜270行目は「deeplearning_torch/08_transformer_torch.py」で生成したボキャブラリーを設定してください。  
+    with open ('/en.pickle', mode='rb') as f:#deeplearning_torch/08_transformer_torch.pyで生成した英語のボキャブラリーへのパスの設定  
+        en_vocab.w2i = pickle.load(f)  
+    en_vocab.i2w = {i: w for w, i in en_vocab.w2i.items()}  
 
+    with open ('/ja.pickle', mode='rb') as f:#deeplearning_torch/08_transformer_torch.pyで生成した日本語のボキャブラリーへのパスの設定  
+        ja_vocab.w2i = pickle.load(f)  
+    ja_vocab.i2w = {i: w for w, i in ja_vocab.w2i.items()}  
 
+300行目にはdeeplearning_torch/08_transformer_torch.py」で生成したモデルを設定してください。  
+load_model=model.load_state_dict(torch.load('/model_PATH'))#deeplearning_torch/08_transformer_torch.pyで生成したモデルへのパスを設定　　
 
 
 
