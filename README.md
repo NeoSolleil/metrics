@@ -61,8 +61,11 @@ with open('ja.pickle', mode='wb') as f:#英語のボキャブラリーをピッ�
     pickle.dump(ja_vocab.w2i,f)  
 
 
+行目はモデルの保存を行うコードになっています
+model_file = 'model/model_' + str(epoch+1) + '.h5'　
+torch.save(model.state_dict(), model_file)　　
 
-
+## 
 
 
 
