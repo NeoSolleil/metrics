@@ -38,7 +38,7 @@
 ## 学習を行う際には「deeplearning_torch/08_transformer_torch.py」を使用します
 
 Transformerのモデルを作成するときに使用するコードです。  
-
+「deeplearning_torch/data」と「deeplearning_torch/pickle」の中身は例なので、自分で変えてください。
 
 
 
