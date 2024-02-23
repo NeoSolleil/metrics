@@ -400,3 +400,6 @@ if __name__ == '__main__':
 
             if idx >= 9:
                 break
+
+        model_file = 'mmodel/model_' + str(epoch+1) + '.h5'
+        torch.save(model.state_dict(), model_file)
