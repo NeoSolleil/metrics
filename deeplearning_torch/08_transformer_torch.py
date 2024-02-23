@@ -12,7 +12,7 @@ from layers.torch import PositionalEncoding
 from layers.torch import MultiHeadAttention
 from utils import Vocab
 from utils.torch import DataLoader
-
+import pickle
 
 class Transformer(nn.Module):
     def __init__(self,
@@ -298,6 +298,13 @@ if __name__ == '__main__':
                                  batch_size=1,
                                  batch_first=True,
                                  device=device)
+
+    
+    with open('en.pickle', mode='wb') as f:#日本語のボキャブラリーをピックルで保存
+        pickle.dump(en_vocab.w2i,f)
+    with open('ja.pickle', mode='wb') as f:#英語のボキャブラリーをピックルで保存
+        pickle.dump(ja_vocab.w2i,f)
+    
 
     '''
     2. モデルの構築
