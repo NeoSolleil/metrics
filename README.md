@@ -38,16 +38,25 @@
 ## 学習を行う際には「deeplearning_torch/08_transformer_torch.py」を使用します
 
 Transformerのモデルを作成するときに使用するコードです。  
-「deeplearning_torch/data」と「deeplearning_torch/pickle」の中身は例なので、自分で変えてください。
+「deeplearning_torch/data」と「deeplearning_torch/pickle」の中身は例なので、自分で変えてください。  
+
+260268
+data_dir = os.path.join(os.path.dirname(__file__), 'data')
+
+en_train_path = os.path.join(data_dir, 'train.en')#日本語
+en_val_path = os.path.join(data_dir, 'dev.en')
+en_test_path = os.path.join(data_dir, 'test.en')
+
+ja_train_path = os.path.join(data_dir, 'train.ja')#英語
+ja_val_path = os.path.join(data_dir, 'dev.ja')
+ja_test_path = os.path.join(data_dir, 'test.ja')
 
 
-
-
-
-    with open('en.pickle', mode='wb') as f:#日本語のボキャブラリーをピックルで保存
-        pickle.dump(en_vocab.w2i,f)
-    with open('ja.pickle', mode='wb') as f:#英語のボキャブラリーをピックルで保存
-        pickle.dump(ja_vocab.w2i,f)
+303〜306行目はボキャブラリーを保存する先を設定してください  
+with open('en.pickle', mode='wb') as f:#日本語のボキャブラリーをピックルで保存  
+    pickle.dump(en_vocab.w2i,f)  
+with open('ja.pickle', mode='wb') as f:#英語のボキャブラリーをピックルで保存  
+    pickle.dump(ja_vocab.w2i,f)  
 
 
 
