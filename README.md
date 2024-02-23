@@ -35,7 +35,7 @@
 ７行目の　with open('書き込まれるフェイルへのパス', mode='a') as f:#書き込まれるふぁいる
 の部分には４行目でせってしたフェイルをどこのファイルに追加するのか設定します
 
-## transformer_torch.py
+## 学習を行う際には「deeplearning_torch/08_transformer_torch.py」を使用します
 
 Transformerのモデルを作成するときに使用するコードです。  
 
