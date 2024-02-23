@@ -70,7 +70,7 @@ with open('ja.pickle', mode='wb') as f:#英語のボキャブラリーをピッ�
 ```model_file = 'model/model_' + str(epoch+1) + '.h5'　  
 torch.save(model.state_dict(), model_file)　　  
 ```
-## モデルを使用してコサイン類似度（スコア）を出力するには「deeplearning_torch/Vector_cossim.py」を使用します。
+## 生成したモデルを使用してコサイン類似度（スコア）を出力するには「deeplearning_torch/Vector_cossim.py」を使用します。
 
 254〜257行目はスコアを出したいMT訳と参照訳を設定してください。MT訳と参照訳は「deeplearning_torch/data」の中に設定してください。 
 ```
