@@ -16,11 +16,11 @@
 
 
 17行目の
-```model_path = ".../fasttext_PATH"#fasttextのモデルへのパス  ```
+```model_path = ".../fasttext_PATH"#fasttextのモデルへのパス```  
 
 の部分にfasttextのモデルへのパスを設定してください
 
-22行目の with open('.../ref_PATH', 'r') as f:#参照訳へのパス  
+22行目の ```with open('.../ref_PATH', 'r') as f:#参照訳へのパス```  
 の部分に参照訳へのパスを設定してください
 
 39行目の with open('.../MT_PATH', 'r') as f:#MT訳へのパス  
