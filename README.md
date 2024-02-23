@@ -54,16 +54,16 @@ ja_val_path = os.path.join(data_dir, 'dev.ja')
 ja_test_path = os.path.join(data_dir, 'test.ja')  
 
 
-303〜306行目はボキャブラリーを保存する先を設定してください  
+303〜306行目はボキャブラリーを保存する先を設定してください。  
 with open('en.pickle', mode='wb') as f:#日本語のボキャブラリーをピックルで保存  
     pickle.dump(en_vocab.w2i,f)  
 with open('ja.pickle', mode='wb') as f:#英語のボキャブラリーをピックルで保存  
     pickle.dump(ja_vocab.w2i,f)  
 
 
-行目はモデルの保存を行うコードになっています
-model_file = 'model/model_' + str(epoch+1) + '.h5'　
-torch.save(model.state_dict(), model_file)　　
+404,405行目はモデルの保存を行うコードになっています。  
+model_file = 'model/model_' + str(epoch+1) + '.h5'　  
+torch.save(model.state_dict(), model_file)　　  
 
 ## 
 
