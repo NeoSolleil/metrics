@@ -70,6 +70,12 @@ torch.save(model.state_dict(), model_file)　　
 
 254〜257行目はスコアを出したいMT訳と参照訳を設定してください。MT訳と参照訳は「deeplearning_torch/data」の中に設定してください。 
 
+data_dir = os.path.join(os.path.dirname(__file__), 'data')
+
+MT = os.path.join(data_dir, '/MT_PATH')#MT訳へのパスを設定
+ja = os.path.join(data_dir, '/REF_PATH')#参照訳へのパスを設定
+
+
 264〜270行目は「deeplearning_torch/08_transformer_torch.py」で生成したボキャブラリーを設定してください。  
     with open ('/en.pickle', mode='rb') as f:#deeplearning_torch/08_transformer_torch.pyで生成した英語のボキャブラリーへのパスの設定  
         en_vocab.w2i = pickle.load(f)  
