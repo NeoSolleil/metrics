@@ -44,7 +44,10 @@ Transformerのモデルを作成するときに使用するコードです。
 
 
 
-
+    with open('en.pickle', mode='wb') as f:#日本語のボキャブラリーをピックルで保存
+        pickle.dump(en_vocab.w2i,f)
+    with open('ja.pickle', mode='wb') as f:#英語のボキャブラリーをピックルで保存
+        pickle.dump(ja_vocab.w2i,f)
 
 
 
