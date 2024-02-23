@@ -75,7 +75,7 @@ torch.save(model.state_dict(), model_file)　　
         en_vocab.w2i = pickle.load(f)  
     en_vocab.i2w = {i: w for w, i in en_vocab.w2i.items()}  
 
-  　with open ('/ja.pickle', mode='rb') as f:#deeplearning_torch/08_transformer_torch.pyで生成した日本語のボキャブラリーへのパスの設定  
+  with open ('/ja.pickle', mode='rb') as f:#deeplearning_torch/08_transformer_torch.pyで生成した日本語のボキャブラリーへのパスの設定  
         ja_vocab.w2i = pickle.load(f)  
     ja_vocab.i2w = {i: w for w, i in ja_vocab.w2i.items()}  
 
