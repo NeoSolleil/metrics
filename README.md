@@ -76,7 +76,10 @@ MT = os.path.join(data_dir, '/MT_PATH')#MT訳へのパスを設定
 ja = os.path.join(data_dir, '/REF_PATH')#参照訳へのパスを設定  
 
 
+
+
 264〜270行目は「deeplearning_torch/08_transformer_torch.py」で生成したボキャブラリーを設定してください。  
+
     with open ('/en.pickle', mode='rb') as f:#deeplearning_torch/08_transformer_torch.pyで生成した英語のボキャブラリーへのパスの設定  
         en_vocab.w2i = pickle.load(f)  
     en_vocab.i2w = {i: w for w, i in en_vocab.w2i.items()}  
@@ -85,7 +88,10 @@ ja = os.path.join(data_dir, '/REF_PATH')#参照訳へのパスを設定
         ja_vocab.w2i = pickle.load(f)  
     ja_vocab.i2w = {i: w for w, i in ja_vocab.w2i.items()}  
 
+
+
 300行目にはdeeplearning_torch/08_transformer_torch.py」で生成したモデルを設定してください。  
+
 load_model=model.load_state_dict(torch.load('/model_PATH'))#deeplearning_torch/08_transformer_torch.pyで生成したモデルへのパスを設定　　
 
 
